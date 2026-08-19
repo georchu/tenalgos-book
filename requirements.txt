@@ -1,14 +1,13 @@
 # Requires Python 3.9 or newer. 3.11+ recommended.
 #
 # macOS ships Python 3.9 as `python3`, so these pins are chosen to install on
-# it without a separate Python. The first release of this file pinned
-# lightgbm==4.7.0, which needs Python >=3.10 and failed on a stock Mac with a
-# wall of pip output that named the wrong culprit.
+# it without a separate Python. Exact versions rather than ranges, for the
+# reason Chapter 4.3 gives: a pandas minor release once changed the default of
+# `fill_method` in `pct_change` and silently changed a strategy's returns.
 #
-# The versions are exact rather than ranges, for the reason Chapter 4.3 gives:
-# a pandas minor release once changed the default of `fill_method` in
-# `pct_change` and silently changed a strategy's returns. If you want newer
-# libraries, change them deliberately and re-run tests/test_engine.py.
+# LightGBM is NOT here. It is needed only by Chapter 11, it needs a system
+# OpenMP library that macOS does not ship, and putting it in this file made a
+# single optional chapter block the other ten. See requirements-ml.txt.
 
 numpy==1.26.4
 pandas==2.2.2
@@ -16,5 +15,4 @@ pyarrow==16.1.0
 scipy==1.13.1
 matplotlib==3.9.0
 scikit-learn==1.5.0
-lightgbm==4.6.0
 requests==2.32.3

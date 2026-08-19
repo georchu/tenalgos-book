@@ -23,8 +23,19 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
-import lightgbm as lgb
-
+try:
+    import lightgbm as lgb
+except Exception as _err:                    # ImportError, or a load failure
+    raise SystemExit(
+        "\nChapter 11 needs LightGBM, which did not load:\n"
+        f"    {type(_err).__name__}: {_err}\n\n"
+        "    pip install -r requirements-ml.txt\n\n"
+        "On macOS it also needs the OpenMP runtime, which Apple does not\n"
+        "ship:\n"
+        "    brew install libomp\n\n"
+        "Nothing else in the book needs LightGBM. Chapters 5-10 and 16 run\n"
+        "without it, and Chapter 11.7 concludes the ML sleeve is not worth\n"
+        "its operational cost anyway.\n")
 from tenalgos.data.loaders import load_panel
 from tenalgos.research.backtest import (run_backtest, information_coefficient,
                                         ic_summary)
