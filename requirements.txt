@@ -5,9 +5,22 @@
 # reason Chapter 4.3 gives: a pandas minor release once changed the default of
 # `fill_method` in `pct_change` and silently changed a strategy's returns.
 #
-# LightGBM is NOT here. It is needed only by Chapter 11, it needs a system
-# OpenMP library that macOS does not ship, and putting it in this file made a
-# single optional chapter block the other ten. See requirements-ml.txt.
+# ---------------------------------------------------------------------------
+# macOS + LightGBM: install the OpenMP runtime, or skip Chapter 11
+# ---------------------------------------------------------------------------
+# LightGBM installs cleanly here but links at load time against libomp.dylib,
+# which Apple does not ship. Without it, `import lightgbm` raises:
+#
+#     OSError: dlopen(.../lib_lightgbm.dylib): Library not loaded:
+#     @rpath/libomp.dylib
+#
+#     brew install libomp          # the fix, once
+#
+# If you would rather not, nothing breaks. LightGBM is used by exactly one
+# script — notebooks/ch11_figures.py — and Chapters 5-10 and 16 run without
+# it. preflight.py reports it as optional and both it and ch11_figures.py
+# explain the fix rather than raising a traceback.
+# ---------------------------------------------------------------------------
 
 numpy==1.26.4
 pandas==2.2.2
@@ -16,3 +29,6 @@ scipy==1.13.1
 matplotlib==3.9.0
 scikit-learn==1.5.0
 requests==2.32.3
+
+# Chapter 11 only. See the macOS note above.
+lightgbm==4.6.0

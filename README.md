@@ -26,17 +26,17 @@ pip install -r requirements.txt
 python3 preflight.py                 # checks Python, imports and data
 ```
 
-**LightGBM is deliberately not in `requirements.txt`.** Only Chapter 11 uses
-it, and on macOS it needs an OpenMP runtime Apple does not ship. If you want
-that one chapter:
+**One macOS note.** LightGBM installs fine but loads a system OpenMP library
+Apple does not ship, so `import lightgbm` fails until you run:
 
 ```bash
-brew install libomp                  # macOS only, before the pip install
-pip install -r requirements-ml.txt
+brew install libomp
 ```
 
-Skipping it costs you one sleeve out of eleven — and Chapter 11.7 concludes
-that sleeve is not worth its operational cost anyway.
+That affects exactly one script — `notebooks/ch11_figures.py`. If you skip it,
+`preflight.py` reports LightGBM as optional and everything else runs normally.
+You lose one sleeve out of eleven, and Chapter 11.7 concludes that sleeve is
+not worth its operational cost anyway.
 
 `preflight.py` tells you what is wrong and what to do about it, which is more
 useful than a hundred lines of pip output. Then, **in this order** — the first
