@@ -1,0 +1,179 @@
+{
+  "sleeve_stats": {
+    "momentum": {
+      "sharpe": 0.067,
+      "ann_return": 0.0101,
+      "ann_vol": 0.1497,
+      "max_dd": -0.5484
+    },
+    "low_risk": {
+      "sharpe": 0.375,
+      "ann_return": 0.0412,
+      "ann_vol": 0.1101,
+      "max_dd": -0.4187
+    },
+    "stat_arb": {
+      "sharpe": 0.023,
+      "ann_return": 0.0012,
+      "ann_vol": 0.0541,
+      "max_dd": -0.2044
+    },
+    "trend": {
+      "sharpe": 0.514,
+      "ann_return": 0.0586,
+      "ann_vol": 0.1142,
+      "max_dd": -0.1663
+    },
+    "carry": {
+      "sharpe": -0.486,
+      "ann_return": -0.032,
+      "ann_vol": 0.0659,
+      "max_dd": -0.4159
+    }
+  },
+  "correlation": {
+    "momentum": {
+      "momentum": 1.0,
+      "low_risk": 0.391,
+      "stat_arb": 0.059,
+      "trend": 0.067,
+      "carry": 0.173
+    },
+    "low_risk": {
+      "momentum": 0.391,
+      "low_risk": 1.0,
+      "stat_arb": -0.018,
+      "trend": 0.103,
+      "carry": 0.156
+    },
+    "stat_arb": {
+      "momentum": 0.059,
+      "low_risk": -0.018,
+      "stat_arb": 1.0,
+      "trend": -0.091,
+      "carry": -0.066
+    },
+    "trend": {
+      "momentum": 0.067,
+      "low_risk": 0.103,
+      "stat_arb": -0.091,
+      "trend": 1.0,
+      "carry": -0.102
+    },
+    "carry": {
+      "momentum": 0.173,
+      "low_risk": 0.156,
+      "stat_arb": -0.066,
+      "trend": -0.102,
+      "carry": 1.0
+    }
+  },
+  "positive_sleeves": [
+    "momentum",
+    "low_risk",
+    "stat_arb",
+    "trend"
+  ],
+  "combos": [
+    {
+      "name": "all sleeves, equal",
+      "sharpe": 0.287,
+      "ann_return": 0.0158,
+      "ann_vol": 0.0551,
+      "max_dd": -0.2067,
+      "skew": -0.929,
+      "corr_spy": 0.672
+    },
+    {
+      "name": "positive sleeves, equal",
+      "sharpe": 0.427,
+      "ann_return": 0.0278,
+      "ann_vol": 0.0651,
+      "max_dd": -0.2061,
+      "skew": -0.734,
+      "corr_spy": 0.614
+    },
+    {
+      "name": "positive, inverse-vol",
+      "sharpe": 0.463,
+      "ann_return": 0.0234,
+      "ann_vol": 0.0505,
+      "max_dd": -0.1659,
+      "skew": -0.643,
+      "corr_spy": 0.557
+    },
+    {
+      "name": "positive, half-Kelly",
+      "sharpe": 0.295,
+      "ann_return": 0.0223,
+      "ann_vol": 0.0758,
+      "max_dd": -0.1844,
+      "skew": -1.144,
+      "corr_spy": 0.163
+    }
+  ],
+  "final": {
+    "name": "inverse-vol + vol target",
+    "sharpe": 0.666,
+    "ann_return": 0.07,
+    "ann_vol": 0.1051,
+    "max_dd": -0.2554,
+    "skew": -0.521,
+    "corr_spy": 0.477
+  },
+  "mean_leverage": 2.28,
+  "deflated": {
+    "1_trials": 0.9923,
+    "8_trials": 0.8321,
+    "67_trials": 0.514
+  },
+  "oos": {
+    "in_sample": 0.738,
+    "out_of_sample": 0.586
+  },
+  "crises": [
+    {
+      "episode": "GFC",
+      "SPY": -0.5053,
+      "portfolio": -0.2184
+    },
+    {
+      "episode": "Euro 2011",
+      "SPY": -0.0548,
+      "portfolio": -0.116
+    },
+    {
+      "episode": "Q4 2018",
+      "SPY": -0.1383,
+      "portfolio": -0.1134
+    },
+    {
+      "episode": "Covid",
+      "SPY": -0.2701,
+      "portfolio": -0.0985
+    }
+  ],
+  "corr_ranges": {
+    "momentum|low_risk": [
+      -0.03,
+      0.73
+    ],
+    "trend|momentum": [
+      -0.69,
+      0.68
+    ],
+    "trend|stat_arb": [
+      -0.37,
+      0.15
+    ]
+  },
+  "capacity_ceilings": {
+    "momentum": 300000000.0,
+    "low_risk": 1000000000.0,
+    "trend": 1000000000.0,
+    "stat_arb": 50000000.0,
+    "carry": 0
+  },
+  "capital_for_1bn": 14285714286,
+  "total_sleeve_capacity": 2350000000.0
+}

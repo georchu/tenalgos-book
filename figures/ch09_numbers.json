@@ -1,0 +1,219 @@
+{
+  "panel": {
+    "days": 3586,
+    "names": 986
+  },
+  "factor_sweep": {
+    "1": {
+      "sharpe_gross": 0.259,
+      "sharpe_net": -0.597,
+      "ann_gross": 0.0208,
+      "ann_turnover": 35.5,
+      "vol": 0.0808
+    },
+    "5": {
+      "sharpe_gross": 0.35,
+      "sharpe_net": -0.902,
+      "ann_gross": 0.0194,
+      "ann_turnover": 35.7,
+      "vol": 0.0558
+    },
+    "15": {
+      "sharpe_gross": 0.727,
+      "sharpe_net": -0.646,
+      "ann_gross": 0.0378,
+      "ann_turnover": 37.0,
+      "vol": 0.0529
+    },
+    "30": {
+      "sharpe_gross": 0.154,
+      "sharpe_net": -1.328,
+      "ann_gross": 0.0076,
+      "ann_turnover": 38.4,
+      "vol": 0.0499
+    }
+  },
+  "headline": {
+    "ann_return": -0.0342,
+    "ann_vol": 0.0529,
+    "sharpe": -0.6456,
+    "sharpe_se": 0.2674,
+    "sortino": -0.8747,
+    "max_drawdown": -0.4156,
+    "calmar": -0.0822,
+    "hit_rate": 0.4387,
+    "skew": 0.2861,
+    "excess_kurtosis": 11.3902,
+    "n_days": 3586.0,
+    "n_trials_declared": 1.0,
+    "deflated_sharpe_prob": 0.0079,
+    "daily_turnover": 0.1467,
+    "ann_turnover": 36.9747,
+    "avg_gross": 1.8589,
+    "avg_net": 0.0139,
+    "avg_names": 237.2181
+  },
+  "headline_gross": {
+    "ann_return": 0.0378,
+    "ann_vol": 0.052,
+    "sharpe": 0.7265,
+    "sharpe_se": 0.2635,
+    "sortino": 1.0003,
+    "max_drawdown": -0.1381,
+    "calmar": 0.2736,
+    "hit_rate": 0.4743,
+    "skew": 0.4175,
+    "excess_kurtosis": 11.7987,
+    "n_days": 3586.0,
+    "n_trials_declared": 1.0,
+    "deflated_sharpe_prob": 0.9971,
+    "daily_turnover": 0.1467,
+    "ann_turnover": 36.9747,
+    "avg_gross": 1.8589,
+    "avg_net": 0.0139,
+    "avg_names": 237.2181
+  },
+  "cost_sweep": [
+    {
+      "spread_bps": 0.5,
+      "sharpe_net": -0.473,
+      "ann_net": -0.0249
+    },
+    {
+      "spread_bps": 1.0,
+      "sharpe_net": -0.507,
+      "ann_net": -0.0268
+    },
+    {
+      "spread_bps": 2.0,
+      "sharpe_net": -0.577,
+      "ann_net": -0.0305
+    },
+    {
+      "spread_bps": 3.0,
+      "sharpe_net": -0.646,
+      "ann_net": -0.0342
+    },
+    {
+      "spread_bps": 5.0,
+      "sharpe_net": -0.783,
+      "ann_net": -0.0416
+    },
+    {
+      "spread_bps": 8.0,
+      "sharpe_net": -0.987,
+      "ann_net": -0.0527
+    }
+  ],
+  "borrow_sweep": [
+    {
+      "borrow_bps": 0,
+      "sharpe_net": -0.576,
+      "ann_net": -0.0305
+    },
+    {
+      "borrow_bps": 40,
+      "sharpe_net": -0.646,
+      "ann_net": -0.0342
+    },
+    {
+      "borrow_bps": 100,
+      "sharpe_net": -0.75,
+      "ann_net": -0.0397
+    },
+    {
+      "borrow_bps": 300,
+      "sharpe_net": -1.099,
+      "ann_net": -0.0582
+    },
+    {
+      "borrow_bps": 1000,
+      "sharpe_net": -2.317,
+      "ann_net": -0.1227
+    }
+  ],
+  "breakeven_spread_bps": null,
+  "latency": [
+    {
+      "lag_days": 1,
+      "sharpe_gross": 0.727,
+      "sharpe_net": 0.469
+    },
+    {
+      "lag_days": 2,
+      "sharpe_gross": 0.834,
+      "sharpe_net": 0.579
+    },
+    {
+      "lag_days": 3,
+      "sharpe_gross": 0.766,
+      "sharpe_net": 0.507
+    },
+    {
+      "lag_days": 5,
+      "sharpe_gross": 0.589,
+      "sharpe_net": 0.324
+    }
+  ],
+  "professional": {
+    "ann_return": 0.0012,
+    "ann_vol": 0.0522,
+    "sharpe": 0.0223,
+    "sharpe_se": 0.265,
+    "sortino": 0.0305,
+    "max_drawdown": -0.2044,
+    "calmar": 0.0057,
+    "hit_rate": 0.454,
+    "skew": 0.3676,
+    "excess_kurtosis": 11.7259,
+    "n_days": 3586.0,
+    "n_trials_declared": 1.0,
+    "deflated_sharpe_prob": 0.5335,
+    "daily_turnover": 0.1467,
+    "ann_turnover": 36.9747,
+    "avg_gross": 1.8589,
+    "avg_net": 0.0139,
+    "avg_names": 237.2181
+  },
+  "deflated_pro": {
+    "1_trials": 0.5335,
+    "12_trials": 0.057,
+    "59_trials": 0.0121
+  },
+  "oos_pro": {
+    "in_sample": 0.098,
+    "out_of_sample": -0.106
+  },
+  "capacity": [
+    {
+      "capital": 10000000.0,
+      "sharpe_net": 0.297,
+      "ret_net": 0.0144,
+      "pnl_net": 143811.0
+    },
+    {
+      "capital": 50000000.0,
+      "sharpe_net": 0.157,
+      "ret_net": 0.0076,
+      "pnl_net": 380363.0
+    },
+    {
+      "capital": 100000000.0,
+      "sharpe_net": 0.054,
+      "ret_net": 0.0026,
+      "pnl_net": 264330.0
+    },
+    {
+      "capital": 500000000.0,
+      "sharpe_net": -0.409,
+      "ret_net": -0.0201,
+      "pnl_net": -10041605.0
+    },
+    {
+      "capital": 1000000000.0,
+      "sharpe_net": -0.583,
+      "ret_net": -0.0301,
+      "pnl_net": -30122360.0
+    }
+  ]
+}

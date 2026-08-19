@@ -1,0 +1,12 @@
+# The panels are ~1.8 GB and are rebuilt from a free download; see README.
+data/*/
+data/*.parquet
+data/*.json
+data/*.csv
+!data/.gitkeep
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+figures/_*_cache/

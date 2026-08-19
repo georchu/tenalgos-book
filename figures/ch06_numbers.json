@@ -1,0 +1,179 @@
+{
+  "reversal_daily": {
+    "sharpe_gross": 0.47959669427171653,
+    "sharpe_net": -1.6422814174638074,
+    "ann_turnover": 102.9860114186808
+  },
+  "lowrisk_unbalanced": {
+    "sharpe_net": -0.37368949973968635,
+    "mean_net_beta": -0.9249,
+    "mean_net_beta_balanced": 0.0008
+  },
+  "sleeve_corr": {
+    "low risk": {
+      "low risk": 1.0,
+      "reversal": -0.096,
+      "momentum": 0.387
+    },
+    "reversal": {
+      "low risk": -0.096,
+      "reversal": 1.0,
+      "momentum": -0.331
+    },
+    "momentum": {
+      "low risk": 0.387,
+      "reversal": -0.331,
+      "momentum": 1.0
+    }
+  },
+  "table_net": {
+    "low risk": {
+      "ann_return": 0.051,
+      "ann_vol": 0.1073,
+      "sharpe": 0.475,
+      "max_drawdown": -0.4187,
+      "skew": -0.9786,
+      "ann_turnover": 2.5002
+    },
+    "reversal": {
+      "ann_return": -0.0579,
+      "ann_vol": 0.1035,
+      "sharpe": -0.5598,
+      "max_drawdown": -0.6265,
+      "skew": 0.5812,
+      "ann_turnover": 11.0645
+    },
+    "momentum": {
+      "ann_return": 0.0094,
+      "ann_vol": 0.1444,
+      "sharpe": 0.0648,
+      "max_drawdown": -0.5484,
+      "skew": -0.8313,
+      "ann_turnover": 4.5042
+    },
+    "equal-weight signal": {
+      "ann_return": -0.063,
+      "ann_vol": 0.1268,
+      "sharpe": -0.497,
+      "max_drawdown": -0.6811,
+      "skew": -0.6722,
+      "ann_turnover": 8.0609
+    },
+    "risk-weighted signal": {
+      "ann_return": -0.0628,
+      "ann_vol": 0.1548,
+      "sharpe": -0.4055,
+      "max_drawdown": -0.6915,
+      "skew": -0.764,
+      "ann_turnover": 9.661
+    },
+    "sum of 3 portfolios": {
+      "ann_return": 0.0116,
+      "ann_vol": 0.0689,
+      "sharpe": 0.1677,
+      "max_drawdown": -0.26,
+      "skew": -0.3327,
+      "ann_turnover": 5.5595
+    },
+    "2 sleeves, equal": {
+      "ann_return": 0.0348,
+      "ann_vol": 0.1053,
+      "sharpe": 0.3307,
+      "max_drawdown": -0.3651,
+      "skew": -0.9651,
+      "ann_turnover": 3.4172
+    },
+    "2 sleeves, risk-weighted": {
+      "ann_return": 0.0446,
+      "ann_vol": 0.1022,
+      "sharpe": 0.4358,
+      "max_drawdown": -0.3577,
+      "skew": -1.0032,
+      "ann_turnover": 3.8608
+    },
+    "2 sleeves, risk-wtd + vol target": {
+      "ann_return": 0.0823,
+      "ann_vol": 0.1093,
+      "sharpe": 0.7525,
+      "max_drawdown": -0.2728,
+      "skew": -0.5841,
+      "ann_turnover": 8.422
+    }
+  },
+  "table_gross_sharpe": {
+    "low risk": 0.6238,
+    "reversal": -0.1151,
+    "momentum": 0.2379,
+    "equal-weight signal": -0.2177,
+    "risk-weighted signal": -0.1414,
+    "sum of 3 portfolios": 0.4336,
+    "2 sleeves, equal": 0.4811,
+    "2 sleeves, risk-weighted": 0.5972,
+    "2 sleeves, risk-wtd + vol target": 1.0146
+  },
+  "ic": {
+    "low risk": {
+      "mean_ic": 0.0066,
+      "ic_ir": 0.0261,
+      "t_stat": 1.535,
+      "pct_positive": 0.5025
+    },
+    "reversal": {
+      "mean_ic": 0.0007,
+      "ic_ir": 0.0054,
+      "t_stat": 0.3183,
+      "pct_positive": 0.4993
+    },
+    "momentum": {
+      "mean_ic": 0.012,
+      "ic_ir": 0.0763,
+      "t_stat": 4.4041,
+      "pct_positive": 0.5455
+    }
+  },
+  "deflated": {
+    "1_trials": 0.9977,
+    "11_trials": 0.8878,
+    "36_trials": 0.7548
+  },
+  "oos": {
+    "combo_in_sample": 1.027,
+    "combo_out_of_sample": 0.423,
+    "lowrisk_in": 0.597,
+    "lowrisk_out": 0.311,
+    "momentum_in": -0.067,
+    "momentum_out": 0.258
+  },
+  "capacity": [
+    {
+      "capital": 10000000.0,
+      "sharpe_net": 0.458,
+      "ret_net": 0.0645,
+      "pnl_net": 644893.0
+    },
+    {
+      "capital": 100000000.0,
+      "sharpe_net": 0.387,
+      "ret_net": 0.0624,
+      "pnl_net": 6239847.0
+    },
+    {
+      "capital": 300000000.0,
+      "sharpe_net": 0.301,
+      "ret_net": 0.0535,
+      "pnl_net": 16064987.0
+    },
+    {
+      "capital": 1000000000.0,
+      "sharpe_net": 0.118,
+      "ret_net": 0.0234,
+      "pnl_net": 23358758.0
+    },
+    {
+      "capital": 3000000000.0,
+      "sharpe_net": -0.057,
+      "ret_net": -0.0125,
+      "pnl_net": -37548347.0
+    }
+  ]
+}

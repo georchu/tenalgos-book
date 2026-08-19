@@ -1,0 +1,210 @@
+{
+  "markets": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "MDY",
+    "EFA",
+    "EEM",
+    "EWJ",
+    "EWZ",
+    "FXI",
+    "EWG",
+    "EWU",
+    "VGK",
+    "TLT",
+    "IEF",
+    "SHY",
+    "TIP",
+    "AGG",
+    "HYG",
+    "LQD",
+    "JNK",
+    "EMB",
+    "GLD",
+    "SLV",
+    "USO",
+    "UNG",
+    "DBC",
+    "DBA",
+    "UUP",
+    "FXE",
+    "FXY",
+    "FXB",
+    "VNQ",
+    "XLE",
+    "GDX",
+    "IYR"
+  ],
+  "missing": [],
+  "table_net": {
+    "fast only (8/24)": {
+      "ann_return": -0.0006,
+      "ann_vol": 0.0744,
+      "sharpe": -0.0077,
+      "max_drawdown": -0.2585,
+      "skew": 0.6069,
+      "excess_kurtosis": 23.556,
+      "ann_turnover": 10.2961
+    },
+    "medium only (32/96)": {
+      "ann_return": 0.0325,
+      "ann_vol": 0.0755,
+      "sharpe": 0.4301,
+      "max_drawdown": -0.121,
+      "skew": -0.1495,
+      "excess_kurtosis": 12.2153,
+      "ann_turnover": 3.3905
+    },
+    "slow only (64/192)": {
+      "ann_return": 0.0264,
+      "ann_vol": 0.0784,
+      "sharpe": 0.336,
+      "max_drawdown": -0.1779,
+      "skew": -0.6711,
+      "excess_kurtosis": 9.0797,
+      "ann_turnover": 2.0788
+    },
+    "ensemble of 4 speeds": {
+      "ann_return": 0.0293,
+      "ann_vol": 0.07,
+      "sharpe": 0.4176,
+      "max_drawdown": -0.1094,
+      "skew": -0.0176,
+      "excess_kurtosis": 16.2556,
+      "ann_turnover": 4.1954
+    },
+    "ensemble, no bucket control": {
+      "ann_return": 0.0942,
+      "ann_vol": 0.3513,
+      "sharpe": 0.2682,
+      "max_drawdown": -0.5189,
+      "skew": -0.0981,
+      "excess_kurtosis": 14.8542,
+      "ann_turnover": 19.3982
+    },
+    "sign of 12m return": {
+      "ann_return": 0.0151,
+      "ann_vol": 0.0565,
+      "sharpe": 0.2671,
+      "max_drawdown": -0.1524,
+      "skew": -0.8655,
+      "excess_kurtosis": 5.5846,
+      "ann_turnover": 1.9824
+    },
+    "ensemble + vol target": {
+      "ann_return": 0.0545,
+      "ann_vol": 0.1101,
+      "sharpe": 0.4954,
+      "max_drawdown": -0.1663,
+      "skew": -0.2608,
+      "excess_kurtosis": 5.4817,
+      "ann_turnover": 10.2723
+    }
+  },
+  "table_gross_sharpe": {
+    "fast only (8/24)": 0.1627,
+    "medium only (32/96)": 0.4935,
+    "slow only (64/192)": 0.3896,
+    "ensemble of 4 speeds": 0.4927,
+    "ensemble, no bucket control": 0.4452,
+    "sign of 12m return": 0.3439,
+    "ensemble + vol target": 0.6677
+  },
+  "corr_to_spy": -0.0134,
+  "trend_in_worst_equity_months": {
+    "spy_mean_21d": -0.0857,
+    "trend_mean_21d": 0.0001
+  },
+  "crises": [
+    {
+      "episode": "GFC 2007-09 to 2009-03",
+      "SPY": -0.5053,
+      "trend_net": 0.0891
+    },
+    {
+      "episode": "Euro crisis 2011",
+      "SPY": -0.0548,
+      "trend_net": -0.1246
+    },
+    {
+      "episode": "Q4 2018",
+      "SPY": -0.1383,
+      "trend_net": -0.0415
+    },
+    {
+      "episode": "Covid 2020",
+      "SPY": -0.2701,
+      "trend_net": -0.0124
+    }
+  ],
+  "beta_up": 0.0619,
+  "beta_down": -0.2787,
+  "deflated": {
+    "1_trials": 0.9691,
+    "7_trials": 0.6849,
+    "43_trials": 0.3633
+  },
+  "oos": {
+    "in_sample": 0.558,
+    "out_of_sample": 0.422
+  },
+  "by_year": {
+    "2006": 0.0,
+    "2007": 0.1445,
+    "2008": 0.0671,
+    "2009": 0.0259,
+    "2010": 0.1269,
+    "2011": -0.0516,
+    "2012": -0.0078,
+    "2013": 0.1689,
+    "2014": 0.0868,
+    "2015": -0.0079,
+    "2016": 0.0394,
+    "2017": 0.095,
+    "2018": -0.0342,
+    "2019": 0.092,
+    "2020": 0.031
+  },
+  "capacity": [
+    {
+      "capital": 100000000.0,
+      "sharpe_net": 0.306,
+      "ret_net": 0.0518,
+      "pnl_net": 5182386.0
+    },
+    {
+      "capital": 1000000000.0,
+      "sharpe_net": 0.149,
+      "ret_net": 0.0361,
+      "pnl_net": 36053550.0
+    },
+    {
+      "capital": 5000000000.0,
+      "sharpe_net": 0.017,
+      "ret_net": 0.0047,
+      "pnl_net": 23591441.0
+    },
+    {
+      "capital": 10000000000.0,
+      "sharpe_net": -0.034,
+      "ret_net": -0.0096,
+      "pnl_net": -96255557.0
+    },
+    {
+      "capital": 50000000000.0,
+      "sharpe_net": -0.112,
+      "ret_net": -0.0323,
+      "pnl_net": -1615232163.0
+    }
+  ],
+  "bucket_pnl": {
+    "equity_us": 0.2095,
+    "equity_intl": 0.0852,
+    "rates": 0.1189,
+    "credit": 0.1831,
+    "commodity": 0.195,
+    "fx": 0.0976,
+    "real_assets": 0.0062
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "n_markets": 152,
+  "by_group": {
+    "equity_us": 46,
+    "equity_intl": 38,
+    "sector": 33,
+    "rates": 16,
+    "credit": 13,
+    "real": 6
+  },
+  "yield_by_group": {
+    "equity_intl": 0.0251,
+    "rates": 0.0209,
+    "real": 0.0388,
+    "credit": 0.0467,
+    "equity_us": 0.0188,
+    "sector": 0.0145
+  },
+  "table_net": {
+    "raw yield, no controls": {
+      "ann_return": -0.014,
+      "ann_vol": 0.0855,
+      "sharpe": -0.1641,
+      "max_drawdown": -0.3406,
+      "skew": 0.1043,
+      "excess_kurtosis": 3.892,
+      "ann_turnover": 1.1296
+    },
+    "risk-adjusted yield": {
+      "ann_return": -0.0568,
+      "ann_vol": 0.1583,
+      "sharpe": -0.3589,
+      "max_drawdown": -0.7149,
+      "skew": 0.3006,
+      "excess_kurtosis": 5.8464,
+      "ann_turnover": 1.173
+    },
+    "+ group-neutralised": {
+      "ann_return": -0.0292,
+      "ann_vol": 0.0638,
+      "sharpe": -0.4578,
+      "max_drawdown": -0.4159,
+      "skew": -0.7967,
+      "excess_kurtosis": 30.0337,
+      "ann_turnover": 1.6262
+    },
+    "+ vol target": {
+      "ann_return": -0.0636,
+      "ann_vol": 0.1022,
+      "sharpe": -0.6218,
+      "max_drawdown": -0.6561,
+      "skew": -0.2341,
+      "excess_kurtosis": 2.9199,
+      "ann_turnover": 8.1918
+    }
+  },
+  "table_gross_sharpe": {
+    "raw yield, no controls": 0.007,
+    "risk-adjusted yield": -0.2645,
+    "+ group-neutralised": -0.2153,
+    "+ vol target": -0.1113
+  },
+  "ic": {
+    "mean_ic": -0.0037,
+    "ic_ir": -0.0237,
+    "t_stat": -1.3761,
+    "pct_positive": 0.4858
+  },
+  "quintiles": {
+    "0": 0.054499998688697815,
+    "1": 0.08429999649524689,
+    "2": 0.07649999856948853,
+    "3": 0.0658000037074089,
+    "4": 0.039400000125169754
+  },
+  "worst_months": {
+    "2020-02-29": -0.1126,
+    "2008-06-30": -0.0814,
+    "2018-12-31": -0.0731,
+    "2014-01-31": -0.0706,
+    "2012-01-31": -0.0677
+  },
+  "skew_vs_trend": {},
+  "trend_carry_corr": -0.0424,
+  "pair": {
+    "trend_sharpe": 0.496,
+    "carry_sharpe": -0.622,
+    "combo_sharpe": -0.061,
+    "combo_maxdd": -0.2061,
+    "trend_maxdd": -0.1663,
+    "carry_maxdd": -0.6561
+  },
+  "pair_corr_range": [
+    -0.501,
+    0.464
+  ],
+  "crises": [
+    {
+      "episode": "GFC",
+      "SPY": -0.5053,
+      "trend": 0.0891,
+      "carry": -0.2638,
+      "both": -0.0874
+    },
+    {
+      "episode": "Euro 2011",
+      "SPY": -0.0548,
+      "trend": -0.1246,
+      "carry": -0.0303,
+      "both": -0.0774
+    },
+    {
+      "episode": "Q4 2018",
+      "SPY": -0.1383,
+      "trend": -0.0415,
+      "carry": -0.1096,
+      "both": -0.0755
+    },
+    {
+      "episode": "Covid",
+      "SPY": -0.2701,
+      "trend": -0.0124,
+      "carry": -0.1817,
+      "both": -0.097
+    }
+  ],
+  "deflated": {
+    "1_trials": 0.0096,
+    "4_trials": 0.0003,
+    "47_trials": 0.0
+  },
+  "oos": {
+    "in_sample": -0.622,
+    "out_of_sample": -0.625
+  },
+  "capacity": [
+    {
+      "capital": 100000000.0,
+      "sharpe_net": -0.396,
+      "ret_net": -0.0822,
+      "pnl_net": -8220829.0
+    },
+    {
+      "capital": 500000000.0,
+      "sharpe_net": -0.541,
+      "ret_net": -0.154,
+      "pnl_net": -76995742.0
+    },
+    {
+      "capital": 1000000000.0,
+      "sharpe_net": -0.624,
+      "ret_net": -0.2031,
+      "pnl_net": -203070695.0
+    },
+    {
+      "capital": 5000000000.0,
+      "sharpe_net": -0.636,
+      "ret_net": -0.261,
+      "pnl_net": -1305095826.0
+    }
+  ],
+  "per_group": {
+    "equity_intl": {
+      "n": 38,
+      "ic_t": -0.12,
+      "sharpe_gross": 0.065,
+      "sharpe_net": -0.109
+    },
+    "equity_us": {
+      "n": 46,
+      "ic_t": -3.38,
+      "sharpe_gross": -0.356,
+      "sharpe_net": -0.558
+    },
+    "sector": {
+      "n": 33,
+      "ic_t": -1.45,
+      "sharpe_gross": 0.002,
+      "sharpe_net": -0.152
+    }
+  },
+  "fixed_income_only": {
+    "n": 29,
+    "ic_t": -1.06,
+    "sharpe_gross": -0.121,
+    "sharpe_net": -0.36,
+    "ann_return": -0.0114,
+    "in_sample": 0.326,
+    "out_of_sample": -0.695
+  },
+  "yield_is_value": {
+    "long": [
+      "SDY",
+      "DVY",
+      "VYM",
+      "HDV",
+      "IWD",
+      "VTV",
+      "IVE"
+    ],
+    "short": [
+      "VUG",
+      "IWF",
+      "IVW",
+      "QQQ",
+      "VGT",
+      "XLK"
+    ],
+    "ann_return": -0.0457,
+    "sharpe": -0.525
+  }
+}

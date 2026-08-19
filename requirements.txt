@@ -1,0 +1,10 @@
+# Pinned, because a pandas minor release once changed the default of
+# fill_method in pct_change and silently changed a strategy's returns.
+numpy==1.26.4
+pandas==2.2.2
+pyarrow==16.1.0
+scipy==1.13.1
+matplotlib==3.9.0
+scikit-learn==1.5.0
+lightgbm==4.7.0
+requests==2.32.3

@@ -1,0 +1,112 @@
+{
+  "features": [
+    "mom_12_1",
+    "mom_6_1",
+    "mom_3_1",
+    "rev_1m",
+    "rev_1w",
+    "vol_126",
+    "vol_ratio",
+    "beta",
+    "idio_vol",
+    "skew_126",
+    "max_ret_21",
+    "log_dv",
+    "amihud"
+  ],
+  "n_rows": 2054746,
+  "models": [
+    {
+      "name": "plain K-fold (leaky)",
+      "sharpe_gross": 0.524,
+      "sharpe_net": 0.21,
+      "ann_net": 0.0169,
+      "max_dd": -0.1401,
+      "turnover": 4.5,
+      "ic_mean": 0.0077,
+      "ic_t": 3.24
+    },
+    {
+      "name": "plain K-fold + leaky feature",
+      "sharpe_gross": 0.797,
+      "sharpe_net": 0.475,
+      "ann_net": 0.038,
+      "max_dd": -0.1194,
+      "turnover": 4.7,
+      "ic_mean": 0.0094,
+      "ic_t": 4.52
+    },
+    {
+      "name": "purged K-fold + embargo",
+      "sharpe_gross": 0.523,
+      "sharpe_net": 0.179,
+      "ann_net": 0.0129,
+      "max_dd": -0.2141,
+      "turnover": 4.3,
+      "ic_mean": 0.0082,
+      "ic_t": 3.58
+    },
+    {
+      "name": "walk-forward",
+      "sharpe_gross": 0.291,
+      "sharpe_net": -0.011,
+      "ann_net": -0.0008,
+      "max_dd": -0.3191,
+      "turnover": 4.5,
+      "ic_mean": 0.0045,
+      "ic_t": 1.84
+    }
+  ],
+  "feature_importance": {
+    "rev_1w": 90,
+    "rev_1m": 390,
+    "vol_ratio": 449,
+    "max_ret_21": 542,
+    "mom_3_1": 598,
+    "mom_6_1": 633,
+    "amihud": 678,
+    "mom_12_1": 788,
+    "log_dv": 870,
+    "idio_vol": 910,
+    "vol_126": 933,
+    "beta": 1040,
+    "skew_126": 1079
+  },
+  "correlation_to_sleeves": {
+    "ml": {
+      "ml": 1.0,
+      "momentum": 0.276,
+      "low_risk": -0.176
+    },
+    "momentum": {
+      "ml": 0.276,
+      "momentum": 1.0,
+      "low_risk": 0.346
+    },
+    "low_risk": {
+      "ml": -0.176,
+      "momentum": 0.346,
+      "low_risk": 1.0
+    }
+  },
+  "spanning_regression": {
+    "alpha_ann": 0.0174,
+    "beta_momentum": 0.187,
+    "beta_low_risk": -0.208,
+    "residual_sharpe": -0.0,
+    "r_squared": 0.16
+  },
+  "ensemble": {
+    "two_sleeve_sharpe": 0.368,
+    "three_sleeve_sharpe": 0.393
+  },
+  "deflated": {
+    "1_trials": 0.7502,
+    "4_trials": 0.3531,
+    "71_trials": 0.0416
+  },
+  "oos": {
+    "in_sample": 0.131,
+    "out_of_sample": 0.277
+  }
+}

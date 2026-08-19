@@ -1,0 +1,150 @@
+{
+  "start": "2011-10-10",
+  "end": "2020-04-01",
+  "n_days": 2133,
+  "deleted_by_default_mask": [
+    {
+      "ticker": "SVXY",
+      "date": "2018-02-06",
+      "true_return": -0.8296
+    },
+    {
+      "ticker": "UVXY",
+      "date": "2018-02-05",
+      "true_return": 0.6621
+    }
+  ],
+  "instruments": {
+    "VIXY": {
+      "ann_return": -0.4305,
+      "ann_vol": 0.6857,
+      "sharpe": -0.628,
+      "max_dd": -0.999,
+      "worst_day": -0.1567,
+      "best_day": 0.391,
+      "skew": 1.63
+    },
+    "UVXY": {
+      "ann_return": -0.6609,
+      "ann_vol": 1.2386,
+      "sharpe": -0.534,
+      "max_dd": -1.0,
+      "worst_day": -0.3345,
+      "best_day": 0.6621,
+      "skew": 1.59
+    },
+    "VIXM": {
+      "ann_return": -0.3627,
+      "ann_vol": 0.3494,
+      "sharpe": -1.038,
+      "max_dd": -0.943,
+      "worst_day": -0.1404,
+      "best_day": 0.1821,
+      "skew": 1.26
+    },
+    "SVXY": {
+      "ann_return": 0.3222,
+      "ann_vol": 0.6585,
+      "sharpe": 0.489,
+      "max_dd": -0.9525,
+      "worst_day": -0.8296,
+      "best_day": 0.1336,
+      "skew": -4.68
+    }
+  },
+  "vixy_rolling_1y_decay": {
+    "median": -0.5428,
+    "best": 1.2421,
+    "worst": -1.6914,
+    "pct_negative": 0.8167
+  },
+  "strategies": {
+    "short VIXY, fixed 20%": {
+      "ann_return": 0.0844,
+      "ann_vol": 0.137,
+      "sharpe": 0.616,
+      "max_dd": -0.3187,
+      "skew": -1.64,
+      "excess_kurt": 8.7,
+      "worst_day": -0.0782,
+      "corr_spy": 0.805
+    },
+    "hold SVXY, fixed 20%": {
+      "ann_return": 0.0635,
+      "ann_vol": 0.1317,
+      "sharpe": 0.482,
+      "max_dd": -0.3215,
+      "skew": -4.68,
+      "excess_kurt": 79.5,
+      "worst_day": -0.1659,
+      "corr_spy": 0.645
+    },
+    "short VIXY, vol-targeted": {
+      "ann_return": 0.0596,
+      "ann_vol": 0.1141,
+      "sharpe": 0.522,
+      "max_dd": -0.2975,
+      "skew": -2.41,
+      "excess_kurt": 21.6,
+      "worst_day": -0.099,
+      "corr_spy": 0.697
+    },
+    "vol-targeted + VIXM tail hedge": {
+      "ann_return": 0.0527,
+      "ann_vol": 0.1097,
+      "sharpe": 0.48,
+      "max_dd": -0.2911,
+      "skew": -2.62,
+      "excess_kurt": 24.7,
+      "worst_day": -0.099,
+      "corr_spy": 0.691
+    }
+  },
+  "feb2018": {
+    "short VIXY, fixed 20%": -0.1118,
+    "hold SVXY, fixed 20%": -0.2579,
+    "short VIXY, vol-targeted": -0.1408,
+    "vol-targeted + VIXM tail hedge": -0.1408,
+    "SPY": -0.0583
+  },
+  "feb2018_svxy_3day": -0.8994,
+  "covid": {
+    "short VIXY, fixed 20%": -0.3081,
+    "hold SVXY, fixed 20%": -0.1484,
+    "short VIXY, vol-targeted": -0.1991,
+    "vol-targeted + VIXM tail hedge": -0.1947,
+    "SPY": -0.2701
+  },
+  "worst_days_hedged": {
+    "2018-02-05": -0.099,
+    "2017-05-17": -0.0442,
+    "2015-06-29": -0.044,
+    "2018-10-10": -0.0414,
+    "2018-02-02": -0.0397
+  },
+  "worst_days_naked": {
+    "2020-03-16": -0.0782,
+    "2018-02-05": -0.0685,
+    "2020-03-09": -0.0548,
+    "2018-02-08": -0.0483,
+    "2016-06-24": -0.0481
+  },
+  "hedge_cost": {
+    "ann_return_give_up": 0.0069,
+    "sharpe_plain": 0.522,
+    "sharpe_hedged": 0.48,
+    "maxdd_plain": -0.2975,
+    "maxdd_hedged": -0.2911,
+    "worst_day_plain": -0.099,
+    "worst_day_hedged": -0.099
+  },
+  "deflated": {
+    "1_trials": 0.9187,
+    "4_trials": 0.6346,
+    "75_trials": 0.1512
+  },
+  "oos": {
+    "in_sample": 0.953,
+    "out_of_sample": -0.102
+  }
+}
