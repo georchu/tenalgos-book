@@ -13,23 +13,32 @@ useless as a trading system — see the warning at the bottom.
 
 ## Quick start
 
+**Python 3.9 or newer.** The stock `python3` on macOS is 3.9 and works;
+3.11+ is recommended. Note the `3` — on macOS and most Linux boxes there is no
+bare `python` command.
+
 ```bash
 git clone https://github.com/georchu/tenalgos-book.git
 cd tenalgos-book
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
+pip install --upgrade pip            # the shipped pip is often too old
 pip install -r requirements.txt
+python3 preflight.py                 # checks Python, imports and data
 ```
 
-Then, **in this order** — the first two commands are the whole method of the
-book, and if they do not pass, nothing after them means anything:
+`preflight.py` tells you what is wrong and what to do about it, which is more
+useful than a hundred lines of pip output. Then, **in this order** — the first
+two commands are the whole method of the book, and if they do not pass,
+nothing after them means anything:
 
 ```bash
-python -m tenalgos.data.integrity     # 10 checks on your data   -> 10/10
-python tests/test_engine.py           # 4 checks on the engine   -> 4/4
-python notebooks/ch05_figures.py      # the first strategy, end to end
+python3 tests/test_engine.py           # 4 checks on the engine  -> 4/4
+python3 -m tenalgos.data.integrity     # 10 checks on your data  -> 10/10
+python3 notebooks/ch05_figures.py      # the first strategy, end to end
 ```
 
-`data/` starts empty. See **Getting the data** below.
+`test_engine.py` needs no data and runs immediately. The other two need the
+panels — `data/` starts empty; see **Getting the data** below.
 
 ---
 
