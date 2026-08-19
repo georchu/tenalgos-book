@@ -127,8 +127,12 @@ it is the point of the book.
 
 ## Licence
 
-MIT. See `LICENSE`. The code is free to use, copy and modify. The book's text
-is not — it is copyright © 2026 George Chu, all rights reserved.
+MIT — see `LICENSE`. The code is free to use, copy and modify.
+
+The book itself is not: its text, its figures as arranged and captioned, and
+its structure are copyright © 2026 George Chu, all rights reserved. `NOTICE.md`
+sets out the boundary, and explains why that note is not inside the licence
+file.
 
 ---
 
