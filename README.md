@@ -6,8 +6,14 @@ Every number, table and figure in **The Quant Billionaire: Ten Algorithms and
 the Firm That Earns a Billion a Year** is produced by the code in this
 repository. Nothing in the book is asserted that is not reproducible here.
 
-The book is by George Chu. This repository is the companion to it and is
-useless as a trading system — see the warning at the bottom.
+The book is by George Chu — paperback and Kindle,
+[ISBN 979-8-19363-612-0](https://www.amazon.com/dp/B0HFRXJNR2). This repository
+is the companion to it and is useless as a trading system — see the warning at
+the bottom.
+
+You do not need the book to use this code, and you do not need the code to read
+the book. They are more useful together: the book explains why each choice was
+made, and the repository lets you disagree with one and rerun it.
 
 ---
 
